@@ -1,0 +1,177 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <script src="https://kit.fontawesome.com/b3737fa4fe.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="image/png" sizes="96x96" rel="icon" href="imagens/pull.png">
+    <title>Bruno Silva</title>
+
+    <script>
+        $(document).ready(function () {
+            $("#quemJS").click(function () {
+                $("#who").animacaoScroll("slow");
+            });
+            $("#faz").click(function () {
+                $("do").animacaoScroll("slow");
+            });
+            $("#curiosidades").click(function () {
+                $("curiosities").animacaoScroll("slow");
+            });
+            $("#esportes").click(function () {
+                $("sports").animacaoScroll("slow");
+            });
+            $("#estudos").click(function () {
+                $("study").animacaoScroll("slow");
+            });
+            $("#filmes").click(function () {
+                $("movies").animacaoScroll("slow");
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li class="dropdown">
+                <a href="#"><i class='fa fa-user-circle' style="font-size: 25px;"></i> Sobre mim </a>
+                <div class="dropdown-content">
+                    <button id="quemJS">
+                        <div id="centro">
+                            <i class='fa fa-user-circle' style="font-size: 25px;"></i>
+                            <p>Quem sou eu?</p>
+                        </div>
+                    </button>
+                    <button id="linguaJS">
+                        <div id="centro">
+                            <i class='fa fa-code' style="font-size: 25px;"></i>
+                            <p>Linguagens</p>
+                        </div>
+                    </button>
+                    <button id="carreiraJS">
+                        <div id="centro">
+                            <i class="fas fa-desktop" style="font-size: 25px"></i>
+                            <p>Sua carreira</p>
+                        </div>
+                    </button>
+                    <button id="emailJS">
+                        <div id="centro">
+                            <i class="fas fa-envelope" style="font-size: 25px"></i>
+                            <p>Entre em contato</p>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="https://github.com/bruninhopunisher?tab=repositories" target="blank"><i class="fa fa-github"
+                        style="font-size: 25px"></i> Projetos no GitHub</a>
+            </li>
+        </ul>
+        <ul>
+            <li class="dropdown">
+                <a href="#" class="dropbtn"><i class="fa fa-globe" style="font-size: 29px" aria-hidden="true"></i>
+                    Redes
+                    Sociais </a>
+                <div class="dropdown-content">
+
+                    <button id="">
+                        <a href="https://www.linkedin.com/in/bruninhodev/" target="blank">
+                            <div id="centro">
+                                <i class="fa fa-linkedin-square" style="font-size:24px"></i>
+                                <p>Linkedin</p>
+
+                            </div>
+                        </a>
+                    </button>
+
+                    <button id="">
+                        <a href="https://www.instagram.com/no.brus/?hl=pt-br" target="blank">
+                            <div id="centro">
+                                <i class="fa fa-instagram" aria-hidden="true" style="font-size: 24px;"></i>
+                                <p>Instagram</p>
+                            </div>
+                        </a>
+                    </button>
+                    <button id="">
+                        <a href="https://www.facebook.com/brunosilva0303" target="blank">
+                            <div id="centro">
+                                <i class="fa fa-facebook-square" style="font-size:24px"></i>
+                                <p>Facebook</p>
+                            </div>
+                        </a>
+                    </button>
+                    <button id="">
+                        <a href="https://open.spotify.com/user/m2e1rgh046zs4sbjck6l16hbt" target="blank">
+                            <div id="centro">
+                                <i class="fa fa-spotify" style="font-size:24px"></i>
+                                <p>Spotify</p>
+                            </div>
+                        </a>
+                    </button>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="imagem">
+        <img src="imagens/port3.jpg" alt="Imagem">
+    </div>
+
+
+    <section class="descrip-about">
+        <div id="who">
+            <h1>Bruno Silva</h1>
+            <p>
+                Estudante de Desenvolvimento de Sistemas (DS) na Instituição Etec Irmã Agostina, Bruno pretende assim
+                que concluir seu curso conquistar sua primeira vaga de estágio em dev ou database.
+            </p>
+        </div>
+
+
+        <div id="do">
+            <h1>Linguagens</h1>
+            <p>
+                Aberto sempre em adquirir novos conhecimentos em diferentes liguagens de programação, mas atualmente tem
+                um conhecimento básico em HTML, CSS, PHP, Java, JavaSrcript, SQL e recentemente iniciou-se seus estudos
+                no framework Flutter que utiliza a linguagem Dart.
+            </p>
+        </div>
+
+        <div id="curiosities">
+            <h1>Suas pretenções na carreira</h1>
+            <p>
+                Seu desejo é poder contribuir no desenvolvimentos de aplicações nativas utilizando Flutter e
+                respectivamente sua linguagem Dart.
+            </p>
+        </div>
+
+    </section>
+
+    <footer>
+        <form action="form" method="POST" action="email.php">
+            <input class="field" name="name" placeholder="Digite seu nome">
+            <input class="field" name="E-mail" placeholder="Digite seu endereço de e-mail">
+            <textarea name="field" name="mesage" placeholder="Descreva o motivo do contato"></textarea>
+            <input class="botão" type="submit" value="Enviar">
+        </form>
+        <div class="p-div">
+            <p>
+                Portifólio pessoal desenvolvido com o intuíto de por em prática os conhecimentos aprendidos sobre HTML e
+                CSS, <br>misturado com um pouco de JavaScript e PHP
+                Desenvolvido por Bruno Silva Souza. Todos os direitos reservados &copy; 2022
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
