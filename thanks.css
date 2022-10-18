@@ -321,6 +321,11 @@
       width: 240px;
     }
   
+    .h1 {
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+
     .descrip-about {
       text-align: justify;
       margin-left: 40px;
@@ -371,6 +376,12 @@
   
     img {
       width: 240px;
+    }
+
+    .texto {
+      text-align: center;
+      margin-left: 40px;
+      margin-right: 40px;
     }
   
     .descrip-about {
